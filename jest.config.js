@@ -3,6 +3,7 @@ const config = {
     collectCoverageFrom: [
       '**/*.{js,jsx}',
       '!**/node_modules/**',
+      '!**jest.config.js**',
       '!**/coverage/**',
     ],
 
