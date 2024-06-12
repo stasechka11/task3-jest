@@ -7,7 +7,7 @@ describe("Books names test suit", () => {
         "Гарри Поттер",
         "Властелин Колец",
         "Волшебник изумрудного города",
-      ])
+      ]),
     ).toEqual([
       "Властелин Колец",
       "Волшебник изумрудного города",
@@ -17,17 +17,17 @@ describe("Books names test suit", () => {
 
   it("There is no sorting", () => {
     const input = [
-      "Властелин Колец",
-      "Властелин Колец",
+      "Властелин Колец", 
+      "Властелин Колец", 
       "Властелин Колец"
     ];
 
-    const expected =  [
-      "Властелин Колец",
-      "Властелин Колец",
+    const expected = [
+      "Властелин Колец", 
+      "Властелин Колец", 
       "Властелин Колец"
     ];
-  
+
     const output = sorting.sortByName(input);
     expect(output).toEqual(expected);
   });
@@ -36,21 +36,20 @@ describe("Books names test suit", () => {
     const input = [
       "Властелин Колец",
       "Волшебник изумрудного города",
-      "Гарри Поттер"
+      "Гарри Поттер",
     ];
 
-    const expected =  [
+    const expected = [
       "Властелин Колец",
       "Волшебник изумрудного города",
-      "Гарри Поттер"
+      "Гарри Поттер",
     ];
-  
+
     const output = sorting.sortByName(input);
     expect(output).toEqual(expected);
   });
 
   it("Without params throws exception", () => {
-   expect(() => sorting.sortByName()).toThrow(TypeError);
+    expect(() => sorting.sortByName()).toThrow(TypeError);
   });
-  
 });

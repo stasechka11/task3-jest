@@ -6,7 +6,8 @@
   "scripts": {
     "test": "jest",
     "coverage": "jest --collectCoverage",
-    "test:watch": "jest --watchAll"
+    "test:watch": "jest --watchAll",
+    "prettier": "prettier"
   },
   "keywords": [
     "jest",
@@ -28,5 +29,8 @@
   "bugs": {
     "url": "https://github.com/stasechka11/task3-jest/issues"
   },
-  "homepage": "https://github.com/stasechka11/task3-jest#readme"
+  "homepage": "https://github.com/stasechka11/task3-jest#readme",
+  "dependencies": {
+    "prettier": "^3.3.2"
+  }
 }
