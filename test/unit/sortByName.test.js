@@ -15,6 +15,23 @@ describe("Books names test suit", () => {
     ]);
   });
 
+  it("There is no sorting", () => {
+    const input = [
+      "Властелин Колец",
+      "Властелин Колец",
+      "Властелин Колец"
+    ];
+
+    const expected =  [
+      "Властелин Колец",
+      "Властелин Колец",
+      "Властелин Колец"
+    ];
+  
+    const output = sorting.sortByName(input);
+    expect(output).toEqual(expected);
+  });
+
   it("Books names should remain sorted in ascending order if already sorted", () => {
     const input = [
       "Властелин Колец",
@@ -30,6 +47,10 @@ describe("Books names test suit", () => {
   
     const output = sorting.sortByName(input);
     expect(output).toEqual(expected);
+  });
+
+  it("Without params throws exception", () => {
+   expect(() => sorting.sortByName()).toThrow(TypeError);
   });
   
 });
